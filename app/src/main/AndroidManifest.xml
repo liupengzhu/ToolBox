@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.toolbox">
+    <!--允许应用程序获取网络信息-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--允许应用程序访问相机-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <!--允许应用程序修改全局音频设置-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!--允许应用程序录制音频-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--允许应用程序写内存卡-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--允许应用程序使用闪光灯-->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!--允许应用程序不进入休眠状态-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
